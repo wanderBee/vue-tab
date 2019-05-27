@@ -1,0 +1,51 @@
+{
+  "name": "vue-tab",
+  "version": "0.1.0-alpha.1",
+  "description": "Vue component: sub tab ",
+  "bin": {
+    "vue-tab": "./bin/vue-tab.js"
+  },
+  "scripts": {
+    "test": "jest --runInBand --coverage",
+    "lint": "standard --verbose | snazzy",
+    "lint:fix": "standard --fix | snazzy",
+    "changelog": "conventional-changelog -p angular -i CHANGELOG.md -s"
+  },
+  "husky": {
+    "hooks": {
+      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS"
+    }
+  },
+  "standard": {
+    "env": [
+      "jest"
+    ]
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/wanderBee/vue-tab.git"
+  },
+  "keywords": [
+    "vue tab"
+  ],
+  "author": "pengfei.wang",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/wanderBee/vue-tab/issues"
+  },
+  "homepage": "https://github.com/wanderBee/vue-tab#readme",
+  "dependencies": {
+    "chalk": "^2.4.2"
+  },
+  "devDependencies": {
+    "@commitlint/cli": "^7.6.1",
+    "@commitlint/config-angular": "^7.6.0",
+    "codecov": "^3.5.0",
+    "conventional-changelog-cli": "^2.0.21",
+    "eslint": "^5.16.0",
+    "husky": "^2.3.0",
+    "jest": "^24.8.0",
+    "snazzy": "^8.0.0",
+    "standard": "^12.0.1"
+  }
+}
